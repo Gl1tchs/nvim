@@ -24,13 +24,6 @@ return require('packer').startup(function(use)
 
     use 'nvim-treesitter/playground'
 
-    use 'nvim-lua/plenary.nvim' -- don't forget to add this one if you don't have it yet!
-    use {
-        'ThePrimeagen/harpoon',
-        branch = 'harpoon2',
-        requires = { { 'nvim-lua/plenary.nvim' } }
-    }
-
     use 'mbbill/undotree'
 
     use 'tpope/vim-fugitive'
@@ -50,8 +43,6 @@ return require('packer').startup(function(use)
             { 'L3MON4D3/LuaSnip' },
         }
     }
-
-    use 'xiyaowong/transparent.nvim'
 
     use {
         requires = { "nvim-treesitter/nvim-treesitter" },
