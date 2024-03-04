@@ -4,6 +4,8 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    use 'iamcco/markdown-preview.nvim'
+
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.5',
         requires = { { 'nvim-lua/plenary.nvim' } }
@@ -16,6 +18,10 @@ return require('packer').startup(function(use)
             vim.cmd('colorscheme rose-pine')
         end
     }
+
+    use 'tikhomirov/vim-glsl'
+
+    use 'HiPhish/rainbow-delimiters.nvim'
 
     use {
         'nvim-treesitter/nvim-treesitter',

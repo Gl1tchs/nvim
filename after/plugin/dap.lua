@@ -7,7 +7,7 @@ dap.adapters.codelldb = {
     type = 'server',
     port = "${port}",
     executable = {
-        command = 'C:/codelldb/adapter/codelldb.exe',
+        command = 'codelldb',
         args = { "--port", "${port}" },
         detached = false,
     }
@@ -21,7 +21,7 @@ dap.configurations.cpp = {
         program = function()
             return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
         end,
-        cwd = '${fileDirname}',
+        cwd = '${workspaceFolder}',
         stopOnEntry = false,
     },
 }
