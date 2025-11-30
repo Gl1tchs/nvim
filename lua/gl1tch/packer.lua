@@ -12,11 +12,7 @@ return require('packer').startup(function(use)
     }
 
     use {
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
+      "loctvl842/monokai-pro.nvim",
     }
 
     use 'tikhomirov/vim-glsl'
@@ -67,5 +63,13 @@ return require('packer').startup(function(use)
     use {
         "folke/todo-comments.nvim",
         requires = "nvim-lua/plenary.nvim",
+    }
+
+    use {
+      'chomosuke/typst-preview.nvim',
+      tag = 'v1.*',
+      config = function()
+        require 'typst-preview'.setup {}
+      end,
     }
 end)
