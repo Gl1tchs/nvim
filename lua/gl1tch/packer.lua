@@ -75,8 +75,5 @@ return require('packer').startup(function(use)
 
     use {
         'tribela/transparent.nvim',
-        config = function()
-            require 'transparent'.setup {}
-        end,
     }
 end)
